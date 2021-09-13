@@ -1,0 +1,45 @@
+.Login {
+    text-align: left !important;
+    /* width: 670px;
+    height: 370px; */
+    /* margin-left: 620px; */
+}
+
+.row {
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+.alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
+.row .col {
+    padding-bottom: 0;
+  }
+.col-login {
+    background-color: #e49e07;
+    width: 40%;
+    margin-left: 30%;
+    height: 120%;
+    border-radius: 5px;
+}
+.col-6 col-sm-6 col-md-6{
+    text-align: center;
+}
