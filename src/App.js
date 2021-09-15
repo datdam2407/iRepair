@@ -6,17 +6,20 @@ import Header from "./components/Header/headerPage";
 import { Row, Col } from "reactstrap";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Login from "./components/Login/Login";
+import Admin from "./components/MainContent/MainContent";
+// import Login2 from "./components/Login/Login";
 
 function App() {
   return (
     <>
       <Router>
-        <Header />
+        {/* <Header /> */}
         <Row className="fixed">
           <Col>
             <Switch>
               <Route path="/" exact component={Login} />
-              {/* <Route path="/Admin" component={AdminPage} /> */}
+              <Route path="/Admin" component={Admin} />
+              {/* <Route path="/Admin" component={use} /> */}
             </Switch>
           </Col>
         </Row>

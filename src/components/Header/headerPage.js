@@ -12,6 +12,7 @@ import {
 } from "reactstrap";
 import "./headerPage.css";
 import { Link, useHistory } from "react-router-dom";
+import logo from "../../asset/images/logo.png";
 
 import {
   Collapse,
@@ -112,15 +113,34 @@ const Header = (props) => {
   }
 
   return (
-    <div>
+    <div className="container-user-list-1">
       <Navbar color="light" light expand="md" style={{ maxHeight: "100%" }}>
-        <Col md={3}>
+        <Col md={2}>
           <NavbarBrand className="header-home" href="#">
             iRepair.
           </NavbarBrand>
         </Col>
-
-        <Col md={7}></Col>
+        <Col md={2}>
+          <NavbarBrand className="header-home" href="#">
+            Service
+          </NavbarBrand>
+        </Col>
+        <Col md={2}>
+          <NavbarBrand className="header-home" href="#">
+            Hotline
+          </NavbarBrand>
+        </Col>
+        <Col md={2}>
+          <NavbarBrand className="header-home" href="#">
+            Information
+          </NavbarBrand>
+        </Col>
+        <Col md={2}>
+          <NavbarBrand className="header-home" href="#">
+            Voucher
+          </NavbarBrand>
+        </Col>
+        {/* <Col md={7}></Col> */}
         <Col md={1}>
           <NavbarToggler onClick={toggle} className="mr-auto" />
           {check === "NOT_LOGGED_IN" ? (
