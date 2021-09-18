@@ -1,25 +1,30 @@
-/*!
 
-=========================================================
-* BLK Design System React - v1.2.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/blk-design-system-react
-* Copyright 2020 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/blk-design-system-react/blob/main/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
-
+import {
+  Container,
+  Row,
+  Col,
+  Label,
+  UncontrolledCarousel,
+} from "reactstrap";
 // reactstrap components
-import { Container } from "reactstrap";
-
+const carouselItems = [
+  {
+    src: require("assets/img/Plumber.jpg").default,
+    altText: "Slide 1",
+    caption: "",
+  },
+  {
+    src: require("assets/img/Electric .jpg").default,
+    altText: "Slide 2",
+    caption: "",
+  },
+  {
+    src: require("assets/img/chester-wade.jpg").default,
+    altText: "Slide 3",
+    caption: "",
+  },
+];
 export default function PageHeader() {
   return (
     <div className="page-header header-filter">
@@ -31,7 +36,14 @@ export default function PageHeader() {
       <div className="squares square6" />
       <div className="squares square7" />
       <Container>
+             
+            
         <div className="content-center brand">
+        <UncontrolledCarousel
+                items={carouselItems}
+                indicators={false}
+                autoPlay={false}
+              />
           <h1 className="h1-seo">Azai Repair</h1>
           <h3 className="d-none d-sm-block">
           What problem do you have, I can help you. 

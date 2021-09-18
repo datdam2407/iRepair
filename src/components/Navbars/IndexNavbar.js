@@ -28,7 +28,7 @@ export default function IndexNavbar() {
     return function cleanup() {
       window.removeEventListener("scroll", changeColor);
     };
-  },[]);
+  }, []);
   const changeColor = () => {
     if (
       document.documentElement.scrollTop > 99 ||
@@ -152,6 +152,7 @@ export default function IndexNavbar() {
                 <i className="fa fa-cogs d-lg-none d-xl-none" />
                 Getting started
               </DropdownToggle>
+
               <DropdownMenu className="dropdown-with-icons">
                 <DropdownItem tag={Link} to="/register-page">
                   <i className="tim-icons icon-bullet-list-67" />
@@ -172,9 +173,19 @@ export default function IndexNavbar() {
                 className="nav-link d-none d-lg-block"
                 color="primary"
                 target="_blank"
-                // href="https://www.creative-tim.com/product/blk-design-system-pro-react?ref=bdsr-user-archive-index-navbar-upgrade-pro"
+              // href="https://www.creative-tim.com/product/blk-design-system-pro-react?ref=bdsr-user-archive-index-navbar-upgrade-pro"
               >
                 <i className="tim-icons icon-spaceship" /> Sign in
+              </Button>
+            </NavItem>
+            <NavItem>
+              <Button
+                className="nav-link d-none d-lg-block"
+                color="primary"
+                target="_blank"
+              // href="https://www.creative-tim.com/product/blk-design-system-pro-react?ref=bdsr-user-archive-index-navbar-upgrade-pro"
+              >
+                <i /> Hot Line :0123456789
               </Button>
             </NavItem>
             <NavItem>
