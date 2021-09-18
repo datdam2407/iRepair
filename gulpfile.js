@@ -9,12 +9,11 @@ gulp.task("licenses", async function () {
       gap.prependText(`/*!
 
 =========================================================
-* BLK Design System React - v1.2.0
+* Light Bootstrap Dashboard React - v2.0.0
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/blk-design-system-react
+* Product Page: https://www.creative-tim.com/product/light-bootstrap-dashboard-react
 * Copyright 2020 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/blk-design-system-react/blob/main/LICENSE.md)
 
 * Coded by Creative Tim
 
@@ -33,12 +32,20 @@ gulp.task("licenses", async function () {
       gap.prependText(`<!--
 
 =========================================================
+<<<<<<< HEAD
+* Light Bootstrap Dashboard React - v2.0.0
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/light-bootstrap-dashboard-react
+* Copyright 2020 Creative Tim (https://www.creative-tim.com)
+=======
 * BLK Design System React - v1.2.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/blk-design-system-react
 * Copyright 2020 Creative Tim (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/blk-design-system-react/blob/main/LICENSE.md)
+>>>>>>> 0baca043504f9325b68bd17f8e496934109ea688
 
 * Coded by Creative Tim
 
@@ -57,12 +64,20 @@ gulp.task("licenses", async function () {
       gap.prependText(`/*!
 
 =========================================================
+<<<<<<< HEAD
+* Light Bootstrap Dashboard React - v2.0.0
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/light-bootstrap-dashboard-react
+* Copyright 2020 Creative Tim (https://www.creative-tim.com)
+=======
 * BLK Design System React - v1.2.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/blk-design-system-react
 * Copyright 2020 Creative Tim (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/blk-design-system-react/blob/main/LICENSE.md)
+>>>>>>> 0baca043504f9325b68bd17f8e496934109ea688
 
 * Coded by Creative Tim
 
