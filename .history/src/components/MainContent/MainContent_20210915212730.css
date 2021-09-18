@@ -1,26 +1,19 @@
 /* .search-header {
     margin-top: 64px;
 } */
-
-
 /* form{
     margin-top: 64px;
 } */
-
-
 /* .logo img{
     width: 90px;
 } */
-
 .image-service {
     width: 100%;
 }
-
-.image-flow {
+.image-flow{
     width: 200px;
 }
-
-.support-body1 {
+.support-body1{
     background-color: rgb(207, 169, 125);
     border-radius: 4px;
 }
@@ -31,206 +24,169 @@
     text-align: left;
     border-radius: .25rem;
 }
-
 .btn-primary {
     color: #fff;
     background-color: #0d6efd;
     border-color: #2c2c2c;
 }
-
-.nav-link:focus,
-.nav-link:hover {
+.nav-link:focus, .nav-link:hover {
     color: #f1f3f5;
 }
-
 .row {
     display: flex;
     flex-wrap: wrap;
-}
-
-.flex-column {
+  }
+  .flex-column {
     flex-direction: column !important;
-}
-
-
-/* Create two unequal columns that sits next to each other */
-
-
-/* Sidebar/left column */
-
-.side {
+  }
+  /* Create two unequal columns that sits next to each other */
+  /* Sidebar/left column */
+  .side {
     flex: 15%;
     padding: 20px;
     height: 550px;
     margin: 20px;
-}
-
-a {
+  }
+  a {
     color: #ffffff;
     text-decoration: none;
     background-color: transparent;
-}
-
-
-/* Main column */
-
-.main {
+  }
+  /* Main column */
+  .main {
     flex: 75%;
     background-color: white;
     margin-top: 80px;
     padding-left: 90px;
     width: 90%;
-}
-
-.choose:hover {
+  }
+  .choose:hover {
     background-color: #ddd;
     color: black;
-}
-
-.nav-pills .nav-link.active {
+  }
+  .nav-pills .nav-link.active {
     background-color: #e69318;
     width: 100%;
 }
-
-.nav-pills .nav-link.active-2 {
+  .nav-pills .nav-link.active-2{
     background-color: #e69318;
     width: 100%;
 }
-
-.container-user-list {
+.container-user-list{
     /* max-width: 900px; */
     margin-top: 80px;
     /* padding-left: 80px; */
     width: 100%;
 }
-
-li.nav-item {
+  li.nav-item {
     width: 100%;
     text-align: left;
     font-size: large;
     padding: 4px;
     height: 37px;
-}
-
-.nav-item {
+  }
+  
+  .nav-item {
     background-color: rgb(207, 169, 125);
     border-radius: 5px;
     margin-top: 2px;
-}
-
-.menu {
+  }
+  
+  .menu {
     background-color: #aaa;
     width: 100%;
     padding: 20px;
-}
-
-.btn-secondary {
+  }
+  .btn-secondary {
     color: #080101;
     background-color: #ffffff;
     border-color: #ffffff;
     font-weight: 700;
     font-size: large;
-}
-
-.btn-secondary:hover {
+  }
+  .btn-secondary:hover {
     color: #080101;
     background-color: #ffffff;
     border-color: #ffffff;
-}
-
-.btn-check:active+.btn-secondary,
-.btn-check:checked+.btn-secondary,
-.btn-secondary.active,
-.btn-secondary:active,
-.show>.btn-secondary.dropdown-toggle {
+  }
+  .btn-check:active + .btn-secondary,
+  .btn-check:checked + .btn-secondary,
+  .btn-secondary.active,
+  .btn-secondary:active,
+  .show > .btn-secondary.dropdown-toggle {
     color: #080101;
     background-color: #ffffff;
     border-color: #ffffff;
-}
-
-.test {
+  }
+  .test {
     width: 16px;
-}
-
-a.nav-link {
+  }
+  a.nav-link {
     color: #ffffff;
     font-weight: 700;
-}
-
-.MainColor {
+  }
+  
+  .MainColor {
     background-color: #b22222;
     width: 100%;
     font-weight: 700;
-}
-
-li.MainColor {
+  }
+  li.MainColor {
     width: 100%;
     height: 40px;
     font-weight: 700;
     padding: 8px 16px;
     border-radius: 2px;
     margin: 2px;
-}
-
-li.nothing {
+  }
+  li.nothing {
     width: 100%;
     height: 40px;
     font-weight: 700;
     padding: 8px 16px;
     border-radius: 2px;
     margin: 2px;
-}
-
-.nothing {
+  }
+  .nothing {
     font-weight: 700;
     background-color: #aaa;
-}
-
-
-/* Change color menu*/
-
-.nav-link:hover {
+  }
+  
+  /* Change color menu*/
+  .nav-link:hover {
     background-color: #b22222;
     color: #ffffff;
-}
-
-.test {
+  }
+  .test {
     width: 16px;
-}
-
-Link.nav-link {
+  }
+  Link.nav-link {
     color: #ffffff;
     font-weight: 700;
-}
-
-.table {
+  }
+  .table {
     width: 90%;
     caption-side: bottom;
     border-collapse: collapse;
-}
-
-.container-user-list {
+  }
+  .container-user-list {
     /* max-width: 900px; */
     margin-top: 80px;
     padding-left: 80px;
     width: 90%;
-}
-
-
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-
-@media screen and (max-width: 768px) {
+  }
+  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 768px) {
     .row {
-        flex-direction: column;
+      flex-direction: column;
     }
-}
-
-
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-
-@media screen and (max-width: 1024px) {
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 1024px) {
     .navbar a {
-        float: none;
-        width: 100%;
+      float: none;
+      width: 100%;
     }
-}
+  }
+  
