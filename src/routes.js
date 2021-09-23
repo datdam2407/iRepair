@@ -1,12 +1,13 @@
 
 import Dashboard from "views/Dashboard.js";
 import UserProfile from "views/UserProfile.js";
-import TableList from "views/TableList.js";
-import Typography from "views/Typography.js";
+import ManageCompany from "views/ManageCompany.js";
+import ManageRepairman from "views/ManageRepairman.js";
 import Icons from "views/Icons.js";
 import Maps from "views/Maps.js";
 import Notifications from "views/Notifications.js";
 import Upgrade from "views/Upgrade.js";
+import ManageService from "views/ManageService";
 
 const dashboardRoutes = [
   {
@@ -33,16 +34,23 @@ const dashboardRoutes = [
   },
   {
     path: "/table",
-    name: "Table List",
+    name: "Manage Company",
     icon: "nc-icon nc-notes",
-    component: TableList,
+    component: ManageCompany,
     layout: "/admin",
   },
   {
-    path: "/typography",
-    name: "Typography",
+    path: "/service",
+    name: "Manage Service",
+    icon: "nc-icon nc-notes",
+    component: ManageService,
+    layout: "/admin",
+  },
+  {
+    path: "/ManageRepairman",
+    name: "Manage Repairman",
     icon: "nc-icon nc-paper-2",
-    component: Typography,
+    component: ManageRepairman,
     layout: "/admin",
   },
   {
