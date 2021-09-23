@@ -1,11 +1,19 @@
-
-import React, { Component } from "react";
+import React, { useState, useEffect } from "react";
+// import React, { Component } from "react";
 import { useLocation } from "react-router-dom";
 import { Navbar, Container, Nav, Dropdown, Button } from "react-bootstrap";
-
+import {
+  Modal,
+  ModalHeader,
+  ModalBody,
+  ModalFooter,
+} from "reactstrap";
 import routes from "routes.js";
 
 function Header() {
+  const [modal, setModalLogOut] = useState(false);
+  const toggleLogOut = () => setModalLogOut(!modal);
+
   const location = useLocation();
   const mobileSidebarToggle = (e) => {
     e.preventDefault();
@@ -182,13 +190,51 @@ function Header() {
                 href="#pablo"
                 onClick={(e) => e.preventDefault()}
               >
-                <span className="no-icon">Log out</span>
+                <span className="no-icon"
+                        onClick={() => {
+                          // Logout(e);
+                          setModalLogOut(true);
+                        }}
+                        data-item="Logout"
+                        className="nav-links"
+                      >
+                        Logout
+                </span>
               </Nav.Link>
             </Nav.Item>
           </Nav>
+          <Modal isOpen={modal} toggle={toggleLogOut}>
+        <ModalHeader
+          style={{ color: "#B22222" }}
+          // close={closeBtn(toggleLogOut)}
+          // toggle={toggleLogOut}
+        >
+          Are you sure?
+        </ModalHeader>
+        <ModalBody>
+          <h5>Do you want to log out?</h5>
+        </ModalBody>
+        <ModalFooter>
+          <Button
+            color="danger"
+            onClick={() => {
+              setModalLogOut(false);
+              window.location.href = "/";
+              localStorage.clear();
+              sessionStorage.clear();
+            }}
+          >
+            Log out
+          </Button>{" "}
+          <Button color="secondary" onClick={toggleLogOut}>
+            Cancel
+          </Button>
+        </ModalFooter>
+      </Modal>
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    
   );
 }
 
