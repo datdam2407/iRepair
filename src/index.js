@@ -1,8 +1,27 @@
+
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
+
+import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
+
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./assets/css/animate.min.css";
+import "./assets/scss/light-bootstrap-dashboard-react.scss?v=2.0.0";
+import "./assets/css/demo.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import Login from "./components/Login/Login";
 
-import App from "./App";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+import AdminLayout from "layouts/Admin.js";
+
+ReactDOM.render(
+  <BrowserRouter>
+    <Switch>
+      <Route path="/admin" render={(props) => <AdminLayout {...props} />} />
+      <Route exact path="/login" component={Login}/>
+      <Redirect from="/" to="/login" />
+      <Redirect from="/admin/dashboard" to="/admin/dashboard" />
+    </Switch>
+  </BrowserRouter>,
+  document.getElementById("root")
+);

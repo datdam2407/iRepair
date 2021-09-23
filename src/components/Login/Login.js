@@ -6,12 +6,12 @@ import {
   Input,
   Spinner,
 } from "reactstrap";
-import { validPassword } from "../Regex";
+// import { validPassword } from "../Regex";
 import "./Login.css";
-import { post } from "../ReadAPI";
-import backgound from "../../asset/images/repair.svg";
-import userimage from "../../asset/images/man.png";
-import wave from "../../asset/images/wave.svg";
+// import { post } from "../ReadAPI";
+// import backgound from "../../asset/images/repair.svg";
+// import userimage from "../../asset/images/man.png";
+// import wave from "../../asset/images/wave.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faUser,
@@ -110,17 +110,17 @@ export default function Login() {
     <div class="container">
       <div className="img">
          {/* <img src= {backgound}></img> */}
-         <img class="wave" src={wave}/>
+         {/* <img class="wave" src={wave}/> */}
 
       </div>
       
       <div className="login-content">
-        <Form className="Login-form"
+        <div className="Login-form"
           onSubmit={(e) => {
             handleSubmit(e);
           }}
         >
-          <img src={userimage}/>
+          {/* <img src={userimage}/> */}
           <h2 class="title">Welcome</h2>
           <div class="input-div one">
             <div class="i">
@@ -159,20 +159,20 @@ export default function Login() {
               />
             </div>
           </div>
-          <a href="#">Forgot Password?</a>
-          <Button className="abc"
-            id="login"
+          <a className="a-login" href="#">Forgot Password?</a>
+          <Button 
+            className="login-button"
             // disabled={button}
           >
             {/* {textBtnLogin} */}
             Sign in
           </Button>
           <Button
-            id="sign-up"
+            className="login-button"
           >
             Sign up
           </Button>
-        </Form>
+        </div>
       </div>
     </div>
     </div>
