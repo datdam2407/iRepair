@@ -9,7 +9,6 @@ import {
   ModalFooter,
 } from "reactstrap";
 import routes from "routes.js";
-
 function Header() {
   const [modal, setModalLogOut] = useState(false);
   const toggleLogOut = () => setModalLogOut(!modal);
@@ -127,7 +126,9 @@ function Header() {
                 <span className="d-lg-block"> Search</span>
               </Nav.Link>
             </Nav.Item>
+          
           </Nav>
+
           <Nav className="ml-auto" navbar>
             <Nav.Item>
               <Nav.Link
