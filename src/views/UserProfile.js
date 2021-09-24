@@ -147,7 +147,7 @@ function User() {
                 <img
                   alt="..."
                   src={
-                    require("assets/img/photo-1431578500526-4d9613015464.jpeg")
+                    require("assets/img/abc.jpeg")
                       .default
                   }
                 ></img>

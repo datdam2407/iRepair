@@ -4,12 +4,17 @@ import UserProfile from "views/UserProfile.js";
 import ManageCompany from "views/ManageCompany.js";
 import ManageRepairman from "views/ManageRepairman.js";
 import Icons from "views/Icons.js";
-import Maps from "views/Maps.js";
 import Notifications from "views/Notifications.js";
 import Upgrade from "views/Upgrade.js";
 import ManageService from "views/ManageService";
+import CreateNewCompany from "components/IRepairCreate/CreateNewCompany";
+import CreateNewService from "components/IRepairCreate/CreateNewService";
+import CreateNewRepairman from "components/IRepairCreate/CreateNewRepairman";
 
 const dashboardRoutes = [
+  
+
+  
   {
     upgrade: true,
     path: "/upgrade",
@@ -18,6 +23,7 @@ const dashboardRoutes = [
     component: Upgrade,
     layout: "/admin",
   },
+
   {
     path: "/dashboard",
     name: "Dashboard",
@@ -33,12 +39,16 @@ const dashboardRoutes = [
     layout: "/admin",
   },
   {
+    name: "Manage",
+  },
+  {
     path: "/table",
     name: "Manage Company",
     icon: "nc-icon nc-notes",
     component: ManageCompany,
     layout: "/admin",
   },
+
   {
     path: "/service",
     name: "Manage Service",
@@ -46,6 +56,7 @@ const dashboardRoutes = [
     component: ManageService,
     layout: "/admin",
   },
+ 
   {
     path: "/ManageRepairman",
     name: "Manage Repairman",
@@ -53,6 +64,33 @@ const dashboardRoutes = [
     component: ManageRepairman,
     layout: "/admin",
   },
+  //create
+  {
+    name: "Create new ",
+  },
+  {
+    path: "/create/company",
+    name: "Create Company",
+    icon: "nc-icon nc-simple-add",
+    component: CreateNewCompany,
+    layout: "/admin",
+  },
+  {
+    path: "/create/service",
+    name: "Create Service",
+    icon: "nc-icon nc-simple-add",
+    component: CreateNewService,
+    layout: "/admin",
+  },
+  {
+    path: "/create/repairman",
+    name: "Create Repairman",
+    icon: "nc-icon nc-simple-add",
+    component: CreateNewRepairman,
+    layout: "/admin",
+  },
+
+  //icon
   {
     path: "/icons",
     name: "Icons",
@@ -60,13 +98,7 @@ const dashboardRoutes = [
     component: Icons,
     layout: "/admin",
   },
-  {
-    path: "/maps",
-    name: "Maps",
-    icon: "nc-icon nc-pin-3",
-    component: Maps,
-    layout: "/admin",
-  },
+  
   {
     path: "/notifications",
     name: "Notifications",
@@ -74,6 +106,8 @@ const dashboardRoutes = [
     component: Notifications,
     layout: "/admin",
   },
+ 
+  
 ];
 
 export default dashboardRoutes;
