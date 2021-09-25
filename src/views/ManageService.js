@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-import data from "./mock_data.json";
-import ReadOnlyRows from "../components/ReadOnlyRows";
 
 // react-bootstrap components
 import {
