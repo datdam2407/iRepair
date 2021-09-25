@@ -28,14 +28,14 @@ import editIcon from "assets/img/edit.png";
 import ReadOnlyRows from "../components/ReadOnlyRows";
 
 function ManageService() {
-    // const [ServiceDelete, setServiceDelete] = useState(null);
-    // const [modalDelete, setServiceModalDelete] = useState(false);
-    // const [ServiceEdit, setServiceEdit] = useState(null);
+    const [ServiceDelete, setServiceDelete] = useState(null);
+    const [modalDelete, setServiceModalDelete] = useState(false);
+    const [ServiceEdit, setServiceEdit] = useState(null);
     const [modalEdit, setServiceModalEdit] = useState(data);
 
 
-    // const toggleDelete = () => setServiceModalDelete(!modalDelete);
-    // const toggleEdit = () => setServiceModalEdit(!modalEdit);
+    const toggleDelete = () => setServiceModalDelete(!modalDelete);
+    const toggleEdit = () => setServiceModalEdit(!modalEdit);
 
 
     function handleServiceDetele() {
@@ -88,9 +88,7 @@ function ManageService() {
                                         </tr>
                                     </thead>
                                     <tbody>
-                                    {modalEdit.map((contact)=> (
-                                        <ReadOnlyRows contact = {contact}/>
-                                     ))}
+                                    
                       
                                     </tbody>
                                 </Table>
@@ -101,7 +99,7 @@ function ManageService() {
                 </Row>
             </Container>
 
-            {/* <Modal isOpen={modalEdit} toggle={toggleEdit}>
+            <Modal isOpen={modalEdit} toggle={toggleEdit}>
                 <ModalHeader
                     style={{ color: "#B22222" }}
                     close={closeBtn(toggleEdit)}
@@ -124,9 +122,9 @@ function ManageService() {
                         Cancel
                     </Button>
                 </ModalFooter>
-            </Modal> */}
+            </Modal>
 
-            {/* <Modal isOpen={modalDelete} toggle={toggleDelete}>
+            <Modal isOpen={modalDelete} toggle={toggleDelete}>
                 <ModalHeader
                     style={{ color: "#B22222" }}
                     close={closeBtn(toggleDelete)}
@@ -149,7 +147,7 @@ function ManageService() {
                         Cancel
                     </Button>
                 </ModalFooter>
-            </Modal> */}
+            </Modal>
         </>
     );
 }
