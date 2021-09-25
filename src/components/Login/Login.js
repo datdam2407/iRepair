@@ -10,8 +10,8 @@ import {
 import "./Login.css";
 // import { post } from "../ReadAPI";
 // import backgound from "../../asset/images/repair.svg";
-// import userimage from "../../asset/images/man.png";
-// import wave from "../../asset/images/wave.svg";
+import userimage from "../../assets/img/man.png";
+import wave from "../../assets/img/wave.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faUser,
@@ -110,7 +110,7 @@ export default function Login() {
     <div class="container">
       <div className="img">
          {/* <img src= {backgound}></img> */}
-         {/* <img class="wave" src={wave}/> */}
+         <img class="wave" src={wave}/>
 
       </div>
       
@@ -120,7 +120,7 @@ export default function Login() {
             handleSubmit(e);
           }}
         >
-          {/* <img src={userimage}/> */}
+          <img src={userimage}/>
           <h2 class="title">Welcome</h2>
           <div class="input-div one">
             <div class="i">

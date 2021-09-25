@@ -21,6 +21,8 @@ import {
 } from "reactstrap";
 import deleteIcon from "assets/img/remove.png";
 import editIcon from "assets/img/edit.png";
+import { Link } from "react-router-dom";
+
 function ManageCompany() {
   const [RepairmanDelete, setRepairmanDelete] = useState(null);
   const [modalDelete, setModalDelete] = useState(false);
@@ -60,9 +62,9 @@ function ManageCompany() {
             <Card className="strpied-tabled-with-hover">
               <Card.Header>
                 <Card.Title as="h4">Manage Repairman</Card.Title>
-                <p className="card-category">
-                  this is a text
-                </p>
+                <Link to="/admin/create/repairman">
+                  Create new Repairman
+                </Link>
               </Card.Header>
               <Card.Body className="table-full-width table-responsive px-0">
                 <Table className="table-hover table-striped">
