@@ -27,6 +27,11 @@ function ManageService() {
 
     const toggleDelete = () => setServiceModalDelete(!modalDelete);
 
+    const [ServiceEdit, setServiceEdit] = useState(null);
+    const [modalEdit, setServiceModaEdit] = useState(false);
+
+    const toggleEdit = () => setServiceModalEdit(!modalEdit);
+
     function handleServiceDetele() {
         del("api/service/" + ServiceDelete.serviceId, localStorage.getItem("token"))
             .then((res) => {
@@ -86,6 +91,7 @@ function ManageService() {
                                             <td>Oud-Turnhout</td>
                                             <td><img src={editIcon} /></td>
                                             <td>
+                                                
                                                 <Media
                                                     src={deleteIcon}
                                                     onClick={() => {
@@ -235,6 +241,32 @@ function ManageService() {
 
                 </Row>
             </Container>
+
+            <Modal isOpen={modalEdit} toggle={toggleEdit}>
+                <ModalHeader
+                    style={{ color: "#B22222" }}
+                    close={closeBtn(toggleEdit)}
+                    toggle={toggleEdit}
+                >
+                    Are you sure?
+                </ModalHeader>
+                <ModalBody>Do you want to edit this service</ModalBody>
+                <ModalFooter>
+                    <Button
+                        color="danger"
+                        onClick={() => {
+                            // handleServiceDetele();
+                            setServiceModalEdit(false);
+                        }}
+                    >
+                        Edit
+                    </Button>{" "}
+                    <Button color="secondary" onClick={toggleEdit}>
+                        Cancel
+                    </Button>
+                </ModalFooter>
+            </Modal>
+
             <Modal isOpen={modalDelete} toggle={toggleDelete}>
                 <ModalHeader
                     style={{ color: "#B22222" }}
